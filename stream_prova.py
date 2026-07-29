@@ -458,7 +458,7 @@ if via and via.strip() != "":
 
         if servizi_esterni == True or (car10 == False and car3 == False):
             fascia = "C"
-            st.warning(f"Assegnata: SUB-FASCIA C (servizi igienici esterni oppure immobile privo di riscaldamento e di autoclave)")
+            st.warning(f"Assegnata: SUB-FASCIA C")
         elif (counter >= 13 or rifiniture == True) and car7 == True and buone_condizioni == True:
             
             fascia = "A"
