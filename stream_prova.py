@@ -600,9 +600,7 @@ if via and via.strip() != "":
 
         st.subheader("1. Accessori e pertinenze")
 
-        if nota_posto_auto == True:
-            st.caption(
-                "Nota: per gli immobili costruiti dopo il 1973 il primo posto auto ovvero box auto di pertinenza dell'immobile non può essere affittato separatamente dall'appartamento.")
+        
 
         if st.checkbox("Presenti balconi, terrazze ad uso esclusivo o cantine?"):
             mq_balconi = st.number_input("Inserire i mq (balconi, terrazze, cantine):")
