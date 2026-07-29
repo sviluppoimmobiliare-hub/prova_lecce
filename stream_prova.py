@@ -332,8 +332,7 @@ if via and via.strip() != "":
         if pulizia(via) in sub_pregio_tratto[1]:
             zona_pregio = st.checkbox(
                 "La via è in sub-zona di pregio solo per un tratto: il civico ricade nel tratto di pregio?",
-                help="Tratto di pregio per Via Nazario Sauro: da via Battisti a via 95° Rgt Fanteria."
-                     "e le altre vie? ")
+                help="Tratto di pregio per Via Nazario Sauro: da via Battisti a via 95° Rgt Fanteria.")
         elif pulizia(via) in sub_pregio_lecce[1]:
             zona_pregio = True
             st.info("Via classificata in sub-zona di pregio (P) dall'allegato 1: concorre all'accesso diretto alla sub-fascia A")
@@ -402,7 +401,7 @@ if via and via.strip() != "":
 
         if servizi_esterni == True or (car8 == False and car3 == False):
             fascia = "C"
-            st.warning(f"Assegnata: SUB-FASCIA C (servizi igienici esterni oppure immobile privo di riscaldamento e di autoclave)")
+            st.warning(f"Assegnata: SUB-FASCIA C")
         elif (counter >= 9 or zona_pregio == True or immobile_A7 == True) and car6 == True and buone_condizioni == True:
             fascia = "A"
             st.success(f"Assegnata: SUB-FASCIA A")
