@@ -343,7 +343,7 @@ if via and via.strip() != "":
 
         if servizi_interni == False:
             fascia = "C"
-            st.warning(f"Assegnata: SUB-FASCIA C (servizi igienici esterni all'alloggio)")
+            st.warning(f"Assegnata: SUB-FASCIA C")
         elif (counter >= 6 or zona_pregio == True) and car8 == True and buone_condizioni == True:
             fascia = "A"
             st.success(f"Assegnata: SUB-FASCIA A")
